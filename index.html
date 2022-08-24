@@ -467,13 +467,70 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="icon-close-black" width="18" Height="18">
             <use href="./images/symbol.svg#icon-close-black"></use>
           </svg>
         </button>
+
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Ім'я</label>
+            <div class="modal-wrap">
+              <input type="text" class="modal-input" name="user-name" id="user-name" required />
+              <svg class="icon-person-black" width="18" Height="18">
+                <use href="./images/symbol.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label for="user-tel" class="modal-label">Телефон</label>
+            <div class="modal-phone">
+              <input type="tel" class="modal-input" name="user-tel" id="user-tel" required />
+              <svg class="icon-person-black" width="18" Height="18">
+                <use href="./images/symbol.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Пошта</label>
+            <div class="modal-mail">
+              <input type="email" class="modal-input" name="user-email" id="user-email" required />
+              <svg class="icon-person-black" width="18" Height="18">
+                <use href="./images/symbol.svg#icon-mail-black"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="modal-field">
+            <label for="user-text" class="modal-label">Коментар</label>
+            <textarea
+              name="user-text"
+              id="user-text"
+              placeholder="Введіть текст"
+              class="online-comment"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              class="modal-check visually-hidden"
+              name="privacy"
+              id="privacy"
+            />
+            <label for="privacy" class="check-text"
+              >Погоджуюся з розсилкою та приймаю
+              <a href="#" class="contract">Умови договору</a></label
+            >
+          </div>
+
+          <button type="submit" class="modal-button">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>

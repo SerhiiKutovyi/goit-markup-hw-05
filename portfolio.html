@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -288,6 +289,7 @@
           <a href="#" class="logo"
             ><span class="logo-first">Web</span><span class="logo-second-foot">Studio</span></a
           >
+
           <address class="address">
             <ul class="address-list list">
               <li class="item">
@@ -342,6 +344,26 @@
             </li>
           </ul>
         </div>
+
+        <!-- ____________________Підпишіться на розсилку_________________________ -->
+
+        <form class="footer-input">
+          <label for="subscribe-email" class="label-subscribe">Підпишіться на розсилку</label>
+          <input
+            class="subscribe-input"
+            type="email"
+            name="subscribe-email"
+            placeholder="E-mail"
+            id="subscribe-email"
+            required
+          />
+        </form>
+        <button type="submit" class="footer-button">
+          <span>Підписатися</span>
+          <svg class="icon-send" width="24" Height="24">
+            <use href="./images/symbol.svg#icon-send"></use>
+          </svg>
+        </button>
       </div>
     </footer>
   </body>

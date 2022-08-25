@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
@@ -465,9 +466,32 @@
             </li>
           </ul>
         </div>
+
+        <!-- ____________________Підпишіться на розсилку_________________________ -->
+
+        <form class="footer-input">
+          <label for="subscribe-email" class="label-subscribe">Підпишіться на розсилку</label>
+          <input
+            class="subscribe-input"
+            type="email"
+            name="subscribe-email"
+            placeholder="E-mail"
+            id="subscribe-email"
+            required
+          />
+        </form>
+        <button type="submit" class="footer-button">
+          <span>Підписатися</span>
+          <svg class="icon-send" width="24" Height="24">
+            <use href="./images/symbol.svg#icon-send"></use>
+          </svg>
+        </button>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+
+    <!-- ====================================MODAL========================================== -->
+
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
           <svg class="icon-close-black" width="18" Height="18">
@@ -507,7 +531,7 @@
             </div>
           </div>
 
-          <div class="modal-field">
+          <div class="modal-field-comment">
             <label for="user-text" class="modal-label">Коментар</label>
             <textarea
               name="user-text"
@@ -516,6 +540,7 @@
               class="online-comment"
             ></textarea>
           </div>
+
           <div class="modal-field">
             <input
               type="checkbox"
@@ -524,9 +549,8 @@
               id="privacy"
             />
             <label for="privacy" class="check-text"
-              >Погоджуюся з розсилкою та приймаю
-              <a href="#" class="contract">Умови договору</a></label
-            >
+              >Погоджуюся з розсилкою та приймаю <a href="#" class="contract"> Умови договору</a>
+            </label>
           </div>
 
           <button type="submit" class="modal-button">Відправити</button>
